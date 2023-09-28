@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1695888470088
+Build-Jdk: 11.0.19
+Built-By: ramindu
+Bundle-ManifestVersion: 2
+Bundle-Name: custom.event.handler
+Bundle-SymbolicName: custom.event.handler
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+DynamicImport-Package: *
+Export-Package: custom.event.handler;version="1.0.0"
+Import-Package: org.osgi.framework;version="[1.7.0,2.0.0)",org.osgi.serv
+ ice.component;version="[1.2.0,2.0.0)"
+Service-Component: OSGI-INF/custom.event.handler.internal.CustomISEventH
+ andlerServiceComponent.xml
+Tool: Bnd-2.1.0.20130426-122213

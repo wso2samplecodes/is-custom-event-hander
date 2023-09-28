@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0" immediate="true" name="customEmailEventHandler">
+        
+    <reference name="EventMgtService" interface="org.wso2.carbon.identity.event.services.IdentityEventService" cardinality="1..1" policy="dynamic" bind="setIdentityEventService" unbind="unsetIdentityEventService"/>
+        
+    <reference name="user.realmservice.default" interface="org.wso2.carbon.user.core.service.RealmService" cardinality="1..1" policy="dynamic" bind="setRealmService" unbind="unsetRealmService"/>
+        
+    <implementation class="custom.event.handler.internal.CustomISEventHandlerServiceComponent"/>
+    
+</scr:component>

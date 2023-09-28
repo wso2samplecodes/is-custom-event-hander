@@ -1,0 +1,3 @@
+custom/event/handler/CustomISEventHandler.class
+custom/event/handler/internal/CustomISEventHandlerServiceComponent.class
+custom/event/handler/internal/NotificationTaskDataHolder.class
