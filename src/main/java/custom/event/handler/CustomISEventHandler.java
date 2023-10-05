@@ -21,11 +21,10 @@ public class CustomISEventHandler extends AbstractEventHandler {
 
     @Override
     public void handleEvent(Event event) throws IdentityEventException {
-        log.info("Custom event handler received events successfully.");
+        log.info("Custom event handler received events successfully to send Email after POST authentication.");
         String eventName = "POST_AUTHENTICATION";
         if (eventName.equals(event.getEventName())) {
             Map<String, Object> eventProperties = event.getEventProperties();
-            String userName = (String) eventProperties.get(IdentityEventConstants.EventProperty.USER_NAME);
             String username = (String) eventProperties.get("user-name");
             try {
                 UserRealm primaryUserRealm = NotificationTaskDataHolder.getInstance().getIdentityRealmService().
